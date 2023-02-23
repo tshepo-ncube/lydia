@@ -1,0 +1,373 @@
+  <!--Main Navigation-->
+{% load static %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- <link href="{% static '/css/home.css' %}" rel="stylesheet" type="text/css"> -->
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Custom CSS -->
+
+  <header>
+    <style>
+      #intro {
+        
+        /*background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");*/
+        background-image: url("{% static 'images/lydia/university-of-cape-town-uct-south-africa-cape-town (1).jpg' %}");
+        height: 100vh;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link">
+          <strong>Lydia Tutors</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_us" rel="nofollow"
+                >About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our_services">Our Offerings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact_us">Contact Us</a>
+              </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Welcome to Lydia Tutors</h1>
+            <h5 class="mb-4">Our premier tutoring company for University of Cape Town students provides expert tutors selected from top-performing UCT students and graduates, offering personalized one-on-one sessions to help students achieve their academic goals.</h5>
+            <a class="btn btn-outline-light btn-lg m-2" href="https://wa.me/27679240455?text=Hey, I need to enquire about your services?" role="button" target="_blank"
+              rel="nofollow" target="_blank">WhatsApp Our Agents</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="#subsribe_to_newsletter"
+              role="button">Subscribe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section id="about_us" class="about_us">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+              <img src="{% static '/images/lydia/graduation.jpg' %}" class="img-fluid" />
+             
+              <img style="margin-top: 30px;" src="{% static '/images/lydia/2020-07-10_UCTtop100.jpg' %}" class="img-fluid" />
+              
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Expert UCT Tutors to Help You Succeed</strong></h4>
+            <p class="text-muted">
+              Welcome to our premier tutoring company for University of Cape Town students! We understand that university courses can be challenging and overwhelming, and that's why our team of expert tutors is here to help you succeed.
+
+              Our tutors are carefully selected from top-performing UCT students and graduates, ensuring that you receive the best possible guidance and support. We offer personalized tutoring sessions that are tailored to your unique needs and learning style. Whether you need help with coursework, exam preparation, or understanding difficult concepts, we've got you covered.
+              
+              Join us today and experience the difference that expert tutoring can make in your university journey! </p>
+            <p style="margin-top: 70px;"><strong>Personalized Approach to Tutoring</strong></p>
+            <p class="text-muted">
+              At our tutoring company, we believe that every student is unique and requires a personalized approach to tutoring. That's why we offer one-on-one tutoring sessions that are tailored to your individual needs and learning style.
+
+              Our tutors are passionate about helping students unlock their full potential and reach new heights of success. Whether you're struggling with a particular course or simply need help improving your study habits, we're here to guide you every step of the way.
+              
+              Join us today and let us help you achieve your academic goals with our personalized approach to tutoring.</p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center" id="our_services">
+        <h4 class="mb-5"><strong>Our Offerings</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'images/lydia/Featured_762x508-5.png' %}" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Personalized One-on-One Tutoring</h5>
+                <p class="card-text">
+                  Expert UCT tutors offer one-on-one guidance for a personalized approach to improve your academic performance. From foundational to advanced courses, get help with coursework, exam prep, and difficult concepts.</p><a href="#!" class="btn btn-primary">learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'images/lydia/2022-07-04_JM_UCT-Student-Campus-Life-21.jpg' %}" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Small Group Tutoring</h5>
+                <p class="card-text">
+                  Collaborate with fellow UCT students in our small group tutoring sessions. Our expert tutors provide guidance and teamwork skills for academic success.</p>
+                <a href="#!" class="btn btn-primary">learn more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="{% static 'images/lydia/best-online-tutoring-websites-620x348.jpg' %}" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Online Tutoring</h5>
+                <p class="card-text">
+                  Access our expert UCT tutors from anywhere at any time with our flexible online tutoring sessions. Get the same level of guidance and support in a virtual classroom environment. </p>
+                <a href="#!" class="btn btn-primary">learn more </a>
+              </div>
+            </div>
+          </div>
+         
+          
+        </div>
+
+        <!-- <center><a href="#!" class="btn" style="background-color: #0BDA51;width:180px ;color: #fff;">more offerings</a></center>
+       -->
+      
+      </section>
+
+    
+      <!--Section: Content-->
+
+      <center>
+        <div id="contact_us" class="container py-5">
+          <h2 class="text-center mb-4">Contact Us</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Contact Details</h4>
+              <ul class="list-unstyled">
+                <li>Email: <a href="mailto:lyd.research@gmail.com">lyd.research@gmail.com</a></li>
+                <li>Phone: +27 61 520 6440</li>
+                <!-- <li>Based: Cape Town, South Africa</li> -->
+              </ul>
+            </div>
+            <div class="col-md-8">
+              <h4>Send us a Message</h4>
+              <p>Feel free to send us a message and we'll get back to you as soon as possible:</p>
+              <a href="mailto:lyd.research@gmail.com" class="btn btn" style="background-color: #0BDA51;color: #fff;">Email Us</a>
+            </div>
+          </div>
+        </div>
+      </center>
+      
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="mb-5" id="subsribe_to_newsletter">
+        <h4 class="mb-5 text-center"><strong>Subscribe To Our Newsletter</strong></h4>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <form method="post" action="{% url 'contact' %}">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              {% csrf_token %}
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text"  id="name" name="name" class="form-control" required/>
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="text"  id="lastname" name="lastname" class="form-control" required/>
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="email" name="email" class="form-control" required/>
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="tel" id="phone" name="phone" class="form-control" required/>
+                <label class="form-label" for="typePhone">Phone number</label>
+              </div>
+
+              <!-- Password input -->
+              <!-- <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+              </div> -->
+
+              <!-- Checkbox -->
+              <!-- <div class="form-check d-flex justify-content-center mb-4">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" checked />
+                <label class="form-check-label" for="form2Example3">
+                  Subscribe to our newsletter
+                </label>
+              </div> -->
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <!-- <p>or sign up with:</p> -->
+                <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-primary btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button> -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+      <!-- <a role="button" class="btn btn-primary btn-lg m-2"
+        href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow" target="_blank">
+        Learn Bootstrap 5
+      </a>
+      <a role="button" class="btn btn-primary btn-lg m-2" href="https://mdbootstrap.com/docs/standard/" target="_blank">
+        Download MDB UI KIT
+      </a> -->
+    </div>
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <!-- <p>Follow MDB on social media</p>
+      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class="btn btn-primary m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/mdbootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/MDBootstrap" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/mdbootstrap/mdb-ui-kit" class="btn btn-primary m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#intro">Lydia Tutors</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->

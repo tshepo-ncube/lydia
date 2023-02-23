@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentic Performance Customs</title>
+    <meta
+      name="description"
+      content="Authentic Performance Customs is an automotive company. We offer the best quality on the market with few years guarantee! Call us today!"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" class="logo"><img src="{% static '/images/logo.png' %}" alt="logo" />Authentic Performance<span> Customs</span></a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#offer">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <!-- <li><a href="#blogs">Blogs</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="{% static 'images/icon-open-menu.svg' %}" alt="open mobile menu" id="open-btn" class="active" />
+        <img src="{% static 'images/icon-close-menu.svg' %}" alt="close mobile menu" id="close-btn" />
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1>Authentic Performance
+          Customs</h1>
+        <p>
+          Authentic Performance Customs provides affordable, reliable and honest work to our customers by offering them the best services in an effcient and timely manner. Authentic Performance Customs
+          can be trusted for all your auto
+          repair needs, from simple oil
+          change to a major engine rebuild.
+        </p>
+        <!-- <p>Authentic Performance Customs 
+          strives to provide the best 
+          automotive services. The most 
+          important aspect of our business 
+          is trust. Our aim is to assure the 
+          customer satisfaction by 
+          providing clean, neat, reliable and 
+          professional services.</p> -->
+        <a href="#offer" class="btn">Check Offer</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h3 class="heading">About us</h3>
+
+      <div class="container">
+        <div class="image">
+          <img src="{% static 'images/thabi/gusheshe.jpg' %}" alt="photo of our client's Mercedes" />
+        </div>
+
+        <div class="content">
+          <h3>We have a professional team that is passionate about your car.</h3>
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu gravida urna eu ante metus. Augue eget fringilla ultrices
+            lectus id integer interdum placerat.
+          </p>0 -->
+
+          <p>Authentic Performance Customs 
+            strives to provide the best 
+            automotive services. The most 
+            important aspect of our business 
+            is trust. Our aim is to assure the 
+            customer satisfaction by 
+            providing clean, neat, reliable and 
+            professional services.</p>
+
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu gravida urna eu ante metus.</p> -->
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="{% static '/js/main.js' %}"></script>
+  </body>
+</html>
